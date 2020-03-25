@@ -1,4 +1,4 @@
-package com.example.lliziyan20200320;
+package com.example.lliziyan20200320.QrCode;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

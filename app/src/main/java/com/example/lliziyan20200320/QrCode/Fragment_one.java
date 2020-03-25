@@ -1,4 +1,4 @@
-package com.example.lliziyan20200320;
+package com.example.lliziyan20200320.QrCode;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.lliziyan20200320.R;
 
 public class Fragment_one extends Fragment {
     @Nullable

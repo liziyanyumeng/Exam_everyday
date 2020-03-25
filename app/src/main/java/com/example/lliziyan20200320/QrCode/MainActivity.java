@@ -1,4 +1,4 @@
-package com.example.lliziyan20200320;
+package com.example.lliziyan20200320.QrCode;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.lliziyan20200320.R;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
 
 public class MainActivity extends AppCompatActivity {
