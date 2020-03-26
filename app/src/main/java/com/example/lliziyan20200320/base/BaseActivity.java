@@ -16,7 +16,7 @@ public abstract class BaseActivity<p extends IBasePresenter> extends AppCompatAc
         i = initLayoutId();
         setContentView(i);
         p = initModel();
-        if (p!= null) {
+        if (p != null) {
             p.attachView(this);
         }
         initView();

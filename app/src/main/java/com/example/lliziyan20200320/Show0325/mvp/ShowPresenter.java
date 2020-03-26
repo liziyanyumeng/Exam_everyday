@@ -1,7 +1,7 @@
-package com.example.lliziyan20200320.mvp;
+package com.example.lliziyan20200320.Show0325.mvp;
 
 import com.example.lliziyan20200320.base.IBasePresenter;
-import com.example.lliziyan20200320.bean.BannerBean;
+import com.example.lliziyan20200320.Show0325.bean.BannerBean;
 
 public class ShowPresenter extends IBasePresenter<ShowContract.ShowView> implements ShowContract.ShowPresenter {
 

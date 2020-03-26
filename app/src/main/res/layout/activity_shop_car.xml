@@ -4,20 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Show0325.NewActivity">
+    android:orientation="vertical"
+    tools:context=".Show0326.ShopCarActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/molirecycler"
-        android:layout_weight="1"
+        android:id="@+id/recycler_shop"
         android:layout_width="match_parent"
-        android:layout_height="0dp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/pingnzhirecycler"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

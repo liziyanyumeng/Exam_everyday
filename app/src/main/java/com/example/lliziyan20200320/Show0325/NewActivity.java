@@ -1,4 +1,4 @@
-package com.example.lliziyan20200320;
+package com.example.lliziyan20200320.Show0325;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -8,12 +8,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.lliziyan20200320.adapter.FirstAdapter;
-import com.example.lliziyan20200320.adapter.SecondAdapter;
-import com.example.lliziyan20200320.bean.BannerBean;
-import com.example.lliziyan20200320.bean.ResultBean;
-import com.example.lliziyan20200320.util.ApiService;
-import com.example.lliziyan20200320.util.RetrofitUtil;
+import com.example.lliziyan20200320.R;
+import com.example.lliziyan20200320.Show0325.adapter.FirstAdapter;
+import com.example.lliziyan20200320.Show0325.adapter.SecondAdapter;
+import com.example.lliziyan20200320.Show0325.bean.BannerBean;
+import com.example.lliziyan20200320.Show0325.bean.ResultBean;
+import com.example.lliziyan20200320.Show0325.util.ApiService;
+import com.example.lliziyan20200320.Show0325.util.RetrofitUtil;
 
 import java.util.ArrayList;
 

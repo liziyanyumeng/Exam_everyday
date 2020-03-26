@@ -1,4 +1,4 @@
-package com.example.lliziyan20200320.adapter;
+package com.example.lliziyan20200320.Show0325.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,18 +11,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lliziyan20200320.R;
-import com.example.lliziyan20200320.bean.CommodityListBean;
-import com.example.lliziyan20200320.bean.PzshBean;
-import com.example.lliziyan20200320.bean.ResultBean;
-import com.example.lliziyan20200320.util.ImageUtil;
+import com.example.lliziyan20200320.Show0325.bean.CommodityList;
+import com.example.lliziyan20200320.Show0325.bean.MlssBean;
+import com.example.lliziyan20200320.Show0325.bean.ResultBean;
+import com.example.lliziyan20200320.Show0325.util.ImageUtil;
 
 import java.util.ArrayList;
 
-public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.MyViewHolder> {
+public class FirstAdapter extends RecyclerView.Adapter<FirstAdapter.MyViewHolder> {
     public Context context;
     public ArrayList<ResultBean> result;
 
-    public SecondAdapter(Context context, ArrayList<ResultBean> result) {
+    public FirstAdapter(Context context, ArrayList<ResultBean> result) {
         this.context = context;
         this.result = result;
     }
@@ -30,22 +30,22 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.MyViewHold
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        final View inflate = LayoutInflater.from(context).inflate(R.layout.pingzhi_adapter, parent, true);
+        final View inflate = LayoutInflater.from(context).inflate(R.layout.moli_adapter, parent, true);
         return new MyViewHolder(inflate);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         final ResultBean resultBean = result.get(position);
-        final ArrayList<PzshBean> pzsh = resultBean.pzsh;
-        final PzshBean pzshBean = pzsh.get(position);
-        final ArrayList<CommodityListBean> commodityList = pzshBean.commodityList;
-        final CommodityListBean commodityListBean = commodityList.get(position);
-        final String commodityName = commodityListBean.commodityName;
-        final String masterPic = commodityListBean.masterPic;
-        final double price = commodityListBean.price;
-        final TextView textName = holder.textName;
+        final ArrayList<MlssBean> mlss = resultBean.mlss;
+        final MlssBean mlssBean = mlss.get(position);
+        final ArrayList<CommodityList> commodityList = mlssBean.commodityList;
+        final CommodityList commodityList1 = commodityList.get(position);
+        final String commodityName = commodityList1.commodityName;
+        final String masterPic = commodityList1.masterPic;
+        final double price = commodityList1.price;
         final ImageView imagePic = holder.imagePic;
+        final TextView textName = holder.textName;
         final TextView textPrice = holder.textPrice;
         textName.setText(commodityName);
         textPrice.setText("￥"+price);

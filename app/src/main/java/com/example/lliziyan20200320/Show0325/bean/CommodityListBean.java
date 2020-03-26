@@ -1,4 +1,4 @@
-package com.example.lliziyan20200320.bean;
+package com.example.lliziyan20200320.Show0325.bean;
 
 import java.io.Serializable;
 

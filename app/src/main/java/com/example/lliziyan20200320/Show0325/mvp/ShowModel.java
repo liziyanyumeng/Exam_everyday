@@ -1,8 +1,8 @@
-package com.example.lliziyan20200320.mvp;
+package com.example.lliziyan20200320.Show0325.mvp;
 
-import com.example.lliziyan20200320.bean.BannerBean;
-import com.example.lliziyan20200320.util.ApiService;
-import com.example.lliziyan20200320.util.RetrofitUtil;
+import com.example.lliziyan20200320.Show0325.bean.BannerBean;
+import com.example.lliziyan20200320.Show0325.util.ApiService;
+import com.example.lliziyan20200320.Show0325.util.RetrofitUtil;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
