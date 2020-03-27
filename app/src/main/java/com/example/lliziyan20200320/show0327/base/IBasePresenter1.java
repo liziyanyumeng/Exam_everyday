@@ -1,10 +1,10 @@
-package com.example.lliziyan20200320.base;
+package com.example.lliziyan20200320.show0327.base;
 
-public abstract class IBasePresenter<View> {
+public abstract class IBasePresenter1<View> {
     public View view;
 
-    public IBasePresenter() {
-        initModel();
+    public IBasePresenter1() {
+        initPresenter();
     }
 
     public void attachView(View view){
@@ -15,5 +15,5 @@ public abstract class IBasePresenter<View> {
             view = null;
         }
     }
-    public abstract void initModel();
+    public abstract void initPresenter();
 }

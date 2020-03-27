@@ -1,7 +1,7 @@
 package com.example.lliziyan20200320.Show0326.mvp;
 
 import com.example.lliziyan20200320.Show0326.bean.ShopCarBean;
-import com.example.lliziyan20200320.base.IBasePresenter;
+import com.example.lliziyan20200320.Show0326.base.IBasePresenter;
 
 public class ShopPresenter extends IBasePresenter<ShopContract.ShopView> implements ShopContract.ShopPresenter {
 
