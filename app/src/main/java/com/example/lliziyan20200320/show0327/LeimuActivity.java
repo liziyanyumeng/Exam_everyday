@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.lliziyan20200320.R;
@@ -22,6 +25,7 @@ public class LeimuActivity extends BaseActivity1<LeiPresenter> implements LeiCon
     private androidx.recyclerview.widget.RecyclerView firstRecycler;
     private LinearLayoutManager linearLayoutManager;
     private FirstLeimu firstLeimu;
+    private android.widget.Button btnJiesan;
 
     @Override
     public int initLayoutId() {
@@ -38,9 +42,20 @@ public class LeimuActivity extends BaseActivity1<LeiPresenter> implements LeiCon
         linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         firstRecycler.setLayoutManager(linearLayoutManager);
+        btnJiesan = (Button) findViewById(R.id.btn_jiesan);
     }
     @Override
-    public void initListener() {}
+    public void initListener() {
+        btnJiesan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到图二
+                final Intent intent = new Intent(LeimuActivity.this,DingdanActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
     @Override
     public void initData() {
         p.lei();
